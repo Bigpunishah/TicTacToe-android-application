@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/playerTurnTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="@string/isXTurn"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/button1"
+                android:onClick="onClick"
+                app:srcCompat="@android:drawable/divider_horizontal_bright"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/button2"
+                app:srcCompat="@android:drawable/divider_horizontal_bright"
+                tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/button6"
+                app:srcCompat="@android:drawable/divider_horizontal_bright"
+                tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/button7"
+                app:srcCompat="@android:drawable/divider_horizontal_bright"
+                tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/button9"
+                app:srcCompat="@android:drawable/divider_horizontal_bright"
+                tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/button5"
+                app:srcCompat="@android:drawable/divider_horizontal_bright"
+                tools:ignore="ImageContrastCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/button4"
+                app:srcCompat="@android:drawable/divider_horizontal_bright"
+                tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/button8"
+                app:srcCompat="@android:drawable/divider_horizontal_bright"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/button3"
+                app:srcCompat="@android:drawable/divider_horizontal_bright"
+                tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/newGameButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#971717"
+        android:text="@string/newGameButton"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <!--End of entire table layout -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
